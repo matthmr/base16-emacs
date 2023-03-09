@@ -48,23 +48,24 @@ There are two choices for applying the emphasis:
                 (const :tag "Contrast" contrast))
   :group 'base16)
 
+;; dirty hack to get colors working on 256-color terminals
 (defvar base16-theme-shell-colors
-  '(:base00 "black"
-    :base01 "brightgreen"
-    :base02 "brightyellow"
-    :base03 "brightblack"
-    :base04 "brightblue"
-    :base05 "white"
-    :base06 "brightmagenta"
-    :base07 "brightwhite"
-    :base08 "red"
-    :base09 "brightred"
-    :base0A "yellow"
-    :base0B "green"
-    :base0C "cyan"
-    :base0D "blue"
-    :base0E "magenta"
-    :base0F "brightcyan")
+    '(:base00 "#181818"
+      :base01 "#282828"
+      :base02 "#383838"
+      :base03 "#585858"
+      :base04 "#b8b8b8"
+      :base05 "#d8d8d8"
+      :base06 "#e8e8e8"
+      :base07 "#f8f8f8"
+      :base08 "#ab4642"
+      :base09 "#dc9656"
+      :base0A "#f7ca88"
+      :base0B "#a1b56c"
+      :base0C "#86c1b9"
+      :base0D "#7cafc2"
+      :base0E "#ba8baf"
+      :base0F "#a16946")
   "Base16 colors used when in a terminal and not using base16-shell.
 
 These mappings are based on the xresources themes.  If you're
@@ -188,7 +189,7 @@ return the actual color value.  Otherwise return the value unchanged."
 ;;;; basic colors
      (border                                       :background base03)
      (cursor                                       :background base08)
-     (default                                      :foreground base05 :background base00)
+     (default                                      :foreground base05) ; :background base00)
      (fringe                                       :background base16-settings-fringe-bg)
      (gui-element                                  :background base01)
      (header-line                                  :foreground base0E :background nil :inherit mode-line)
