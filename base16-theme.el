@@ -230,7 +230,7 @@ return the actual color value.  Otherwise return the value unchanged."
      (font-lock-doc-face                           :foreground base04)
      (font-lock-doc-string-face                    :foreground base03)
      (font-lock-function-name-face                 :foreground base0D)
-     (font-lock-keyword-face                       :foreground base0E)
+     (font-lock-keyword-face                       :foreground base0E :weight bold)
      (font-lock-negation-char-face                 :foreground base0B)
      (font-lock-preprocessor-face                  :foreground base0D)
      (font-lock-regexp-grouping-backslash          :foreground base0A)
