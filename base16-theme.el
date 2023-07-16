@@ -50,22 +50,22 @@ There are two choices for applying the emphasis:
 
 ;; dirty hack to get colors working on 256-color terminals
 (defvar base16-theme-shell-colors
-    '(:base00 "#181818"
-      :base01 "#282828"
-      :base02 "#383838"
-      :base03 "#585858"
-      :base04 "#b8b8b8"
-      :base05 "#d8d8d8"
-      :base06 "#e8e8e8"
-      :base07 "#f8f8f8"
-      :base08 "#ab4642"
-      :base09 "#dc9656"
-      :base0A "#f7ca88"
-      :base0B "#a1b56c"
-      :base0C "#86c1b9"
-      :base0D "#7cafc2"
-      :base0E "#ba8baf"
-      :base0F "#a16946")
+    '(:base00 "#151515"
+      :base01 "#202020"
+      :base02 "#303030"
+      :base03 "#505050"
+      :base04 "#b0b0b0"
+      :base05 "#d0d0d0"
+      :base06 "#e0e0e0"
+      :base07 "#f5f5f5"
+      :base08 "#ac4142"
+      :base09 "#d28445"
+      :base0A "#f4bf75"
+      :base0B "#90a959"
+      :base0C "#75b5aa"
+      :base0D "#6a9fb5"
+      :base0E "#aa759f"
+      :base0F "#8f5536")
   "Base16 colors used when in a terminal and not using base16-shell.
 
 These mappings are based on the xresources themes.  If you're
@@ -73,22 +73,22 @@ using a different terminal color scheme, you may want to look for
 an alternate theme for use in the terminal.")
 
 (defvar base16-theme-shell-colors-256
-  '(:base00 "black"
-    :base01 "color-18"
-    :base02 "color-19"
-    :base03 "brightblack"
-    :base04 "color-20"
-    :base05 "white"
-    :base06 "color-21"
-    :base07 "brightwhite"
-    :base08 "red"
-    :base09 "color-16"
-    :base0A "yellow"
-    :base0B "green"
-    :base0C "cyan"
-    :base0D "blue"
-    :base0E "magenta"
-    :base0F "color-17")
+  '(:base00 "#151515"
+    :base01 "#202020"
+    :base02 "#303030"
+    :base03 "#505050"
+    :base04 "#b0b0b0"
+    :base05 "#d0d0d0"
+    :base06 "#e0e0e0"
+    :base07 "#f5f5f5"
+    :base08 "#ac4142"
+    :base09 "#d28445"
+    :base0A "#f4bf75"
+    :base0B "#90a959"
+    :base0C "#75b5aa"
+    :base0D "#6a9fb5"
+    :base0E "#aa759f"
+    :base0F "#8f5536")
   "Base16 colors used when in a terminal and using base16-shell.
 
 These mappings are based on the xresources themes combined with
@@ -223,22 +223,22 @@ return the actual color value.  Otherwise return the value unchanged."
      (custom-state                                 :foreground base0B)
 
 ;;;; font-lock
-     (font-lock-builtin-face                       :foreground base0C)
+     (font-lock-builtin-face                       :foreground base0C :weight bold)
      (font-lock-comment-delimiter-face             :foreground base03)
-     (font-lock-comment-face                       :foreground base03)
-     (font-lock-constant-face                      :foreground base09)
-     (font-lock-doc-face                           :foreground base04)
-     (font-lock-doc-string-face                    :foreground base03)
-     (font-lock-function-name-face                 :foreground base0D)
-     (font-lock-keyword-face                       :foreground base0E :weight bold)
-     (font-lock-negation-char-face                 :foreground base0B)
-     (font-lock-preprocessor-face                  :foreground base0D)
+     (font-lock-comment-face                       :foreground base03 :slant italic)
+     (font-lock-constant-face                      :foreground base09 :weight bold)
+     (font-lock-doc-face                           :foreground base04 :slant italic)
+     (font-lock-doc-string-face                    :foreground base03 :slant italic)
+     (font-lock-function-name-face                 :foreground base0D :weight bold)
+     (font-lock-keyword-face                       :foreground base0E :slant italic)
+     (font-lock-negation-char-face                 :foreground base0B :weight bold :slant italic)
+     (font-lock-preprocessor-face                  :foreground base0D :sland italic)
      (font-lock-regexp-grouping-backslash          :foreground base0A)
      (font-lock-regexp-grouping-construct          :foreground base0E)
-     (font-lock-string-face                        :foreground base0B)
-     (font-lock-type-face                          :foreground base0A)
-     (font-lock-variable-name-face                 :foreground base08)
-     (font-lock-warning-face                       :foreground base08)
+     (font-lock-string-face                        :foreground base0B :slant italic)
+     (font-lock-type-face                          :foreground base0A :weight bold)
+     (font-lock-variable-name-face                 :foreground base08 :slant italic)
+     (font-lock-warning-face                       :foreground base08 :weight bold)
 
 ;;;; isearch
      (match                                        :foreground base0D :background base01 :inverse-video t)
