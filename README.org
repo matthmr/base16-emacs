@@ -1,6 +1,14 @@
 [[https://stable.melpa.org/#/base16-theme][file:https://stable.melpa.org/packages/base16-theme-badge.svg]]
 [[http://melpa.org/#/base16-theme][file:http://melpa.org/packages/base16-theme-badge.svg]]
 
+* NOTE
+
+This is the =mH= fork of =base16=. My changes are mostly subtractive. The
+goal of this fork is to make it suitable for a very specific niche of Emacs
+users: the ones that use Emacs without graphic display and with little to no
+external packages installed. If you're not in this group, I suggest you use the
+original instead.
+
 * Base16 themes for Emacs
 
 [[https://github.com/tinted-theming/home][Tinted Theming]] provides carefully chosen syntax highlighting and a default set
