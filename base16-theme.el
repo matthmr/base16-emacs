@@ -48,24 +48,23 @@ There are two choices for applying the emphasis:
                 (const :tag "Contrast" contrast))
   :group 'base16)
 
-;; dirty hack to get colors working on 256-color terminals
 (defvar base16-theme-shell-colors
-    '(:base00 "#151515"
-      :base01 "#202020"
-      :base02 "#303030"
-      :base03 "#505050"
-      :base04 "#b0b0b0"
-      :base05 "#d0d0d0"
-      :base06 "#e0e0e0"
-      :base07 "#f5f5f5"
-      :base08 "#ac4142"
-      :base09 "#d28445"
-      :base0A "#f4bf75"
-      :base0B "#90a959"
-      :base0C "#75b5aa"
-      :base0D "#6a9fb5"
-      :base0E "#aa759f"
-      :base0F "#8f5536")
+  '(:base00 "black"
+    :base01 "brightgreen"
+    :base02 "brightyellow"
+    :base03 "brightblack"
+    :base04 "brightblue"
+    :base05 "white"
+    :base06 "brightmagenta"
+    :base07 "brightwhite"
+    :base08 "red"
+    :base09 "brightred"
+    :base0A "yellow"
+    :base0B "green"
+    :base0C "cyan"
+    :base0D "blue"
+    :base0E "magenta"
+    :base0F "brightcyan")
   "Base16 colors used when in a terminal and not using base16-shell.
 
 These mappings are based on the xresources themes.  If you're
@@ -73,22 +72,22 @@ using a different terminal color scheme, you may want to look for
 an alternate theme for use in the terminal.")
 
 (defvar base16-theme-shell-colors-256
-  '(:base00 "#151515"
-    :base01 "#202020"
-    :base02 "#303030"
-    :base03 "#505050"
-    :base04 "#b0b0b0"
-    :base05 "#d0d0d0"
-    :base06 "#e0e0e0"
-    :base07 "#f5f5f5"
-    :base08 "#ac4142"
-    :base09 "#d28445"
-    :base0A "#f4bf75"
-    :base0B "#90a959"
-    :base0C "#75b5aa"
-    :base0D "#6a9fb5"
-    :base0E "#aa759f"
-    :base0F "#8f5536")
+  '(:base00 "black"
+    :base01 "color-18"
+    :base02 "color-19"
+    :base03 "brightblack"
+    :base04 "color-20"
+    :base05 "white"
+    :base06 "color-21"
+    :base07 "brightwhite"
+    :base08 "red"
+    :base09 "color-16"
+    :base0A "yellow"
+    :base0B "green"
+    :base0C "cyan"
+    :base0D "blue"
+    :base0E "magenta"
+    :base0F "color-17")
   "Base16 colors used when in a terminal and using base16-shell.
 
 These mappings are based on the xresources themes combined with
@@ -249,7 +248,7 @@ return the actual color value.  Otherwise return the value unchanged."
      (isearch-fail                                 :background base01 :inverse-video t :inherit font-lock-warning-face)
 
 ;;;; line-numbers
-     (line-number                                  :foreground base03 :background base16-settings-fringe-bg)
+     (line-number                                  :foreground base03) ; :background base16-settings-fringe-bg)
      (line-number-current-line                     :inherit fringe)
 
 ;;;; mode-line
